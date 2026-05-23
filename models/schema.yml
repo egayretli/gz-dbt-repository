@@ -1,0 +1,19 @@
+version: 2 
+
+sources:
+  - name: raw
+    schema: gz_raw_data
+    tables:
+      - name: sales
+        identifier: raw_sales
+        description: "Customer sales data"
+        columns:
+          - name: date_date
+            description: "The date that customer make this purchase"
+          - name: orders_id 
+            description: "The primary key of the sales"
+      - name: ship
+        identifier: raw_ship
+      - name: product
+        identifier: raw_product
+
